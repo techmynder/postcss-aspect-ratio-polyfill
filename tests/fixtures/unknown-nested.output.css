@@ -1,0 +1,13 @@
+.test {
+  margin: 0 auto;
+  aspect-ratio: auto;
+  color: red;
+}
+@supports not (aspect-ratio: auto) {
+  .test::before {
+    content: unset;
+}
+.test::after {
+    content: unset;
+}
+}
