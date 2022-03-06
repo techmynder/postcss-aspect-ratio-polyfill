@@ -11,12 +11,11 @@ npm i -D postcss-aspect-ratio-polyfill
 ## Usage
 
 ```js
-const postcss = require('postcss')
+const postcss = require("postcss");
 
 const output = postcss()
-  .use(require('postcss-aspect-ratio-polyfill'))
-  .process(require('fs').readFileSync('input.css', 'utf8'))
-  .css
+  .use(require("postcss-aspect-ratio-polyfill"))
+  .process(require("fs").readFileSync("input.css", "utf8")).css;
 ```
 
 ### Basis
@@ -35,11 +34,11 @@ output:
 .aspect-ratio-box::before {
   float: left;
   padding-top: 56.25%;
-  content: '';
+  content: "";
 }
 .aspect-ratio-box::after {
   display: block;
-  content: '';
+  content: "";
   clear: both;
 }
 ```
@@ -48,7 +47,7 @@ output:
 
 ```html
 <div class="aspect-ratio-box">
-  <img src="https://picsum.photos/1280/720">
+  <img src="https://picsum.photos/1280/720" />
 </div>
 ```
 
@@ -82,11 +81,11 @@ output:
 .aspect-ratio-box::before {
   float: left;
   padding-top: 56.25%;
-  content: '';
+  content: "";
 }
 .aspect-ratio-box::after {
   display: block;
-  content: '';
+  content: "";
   clear: both;
 }
 .aspect-ratio-box > img {

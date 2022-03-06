@@ -29,6 +29,7 @@
   "devDependencies": {
     "glob": "^7.1.6",
     "postcss": "^8.2.6",
+    "prettier": "^2.5.1",
     "tape": "^5.2.1"
   }
 }
