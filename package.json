@@ -31,5 +31,10 @@
     "postcss": "^8.4.7",
     "prettier": "^2.5.1",
     "tape": "^5.5.2"
+  },
+  "scripts": {
+    "test": "node tests/index.js",
+    "lint": "prettier --check .",
+    "lint:fix": "prettier --write ."
   }
 }
