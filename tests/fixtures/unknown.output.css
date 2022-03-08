@@ -1,0 +1,11 @@
+.test {
+  aspect-ratio: auto;
+}
+@supports not (aspect-ratio: auto) {
+  .test::before {
+    content: unset;
+}
+.test::after {
+    content: unset;
+}
+}
